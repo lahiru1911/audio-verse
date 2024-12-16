@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AudioVerse</h1>
+        <button id="themeToggle">Toggle Theme</button>
+    </header>
+
+    <main>
+        <!-- Playlist Section -->
+        <section id="playlistSection">
+            <h2>Playlist</h2>
+            <ul id="playlist"></ul>
+        </section>
+
+        <!-- Controls Section -->
+        <section id="controls">
+            <audio id="audioPlayer" controls></audio>
+            <button onclick="playPrevious()">Previous</button>
+            <button onclick="playNext()">Next</button>
+            <button onclick="adjustPlaybackSpeed(0.5)">Slow</button>
+            <button onclick="adjustPlaybackSpeed(1)">Normal</button>
+            <button onclick="adjustPlaybackSpeed(1.5)">Fast</button>
+        </section>
+
+        <!-- Online Downloader Section -->
+        <section id="downloader">
+            <h2>Online Music Downloader</h2>
+            <input type="text" id="downloadUrl" placeholder="Enter music URL">
+            <button onclick="downloadMusic()">Download</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
